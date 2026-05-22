@@ -1,4 +1,4 @@
-# Árvore AVL - Implementações em C
+# Árvore AVL
 
 Esta pasta contém o código desenvolvido para um trabalho prático focado na estrutura de dados **Árvore AVL**. O objetivo principal foi implementar uma árvore binária de pesquisa que se mantém balanceada de forma automática após cada operação de inserção ou exclusão de nós.
 

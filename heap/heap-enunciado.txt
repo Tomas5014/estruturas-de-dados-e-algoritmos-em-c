@@ -1,0 +1,28 @@
+Desenvolva um sistema para gerenciar tarefas em uma equipe de desenvolvimento de software. Cada tarefa tem uma urgência e um tempo estimado para conclusão. O sistema deve ajudar a equipe a priorizar tarefas com alta urgência e também identificar tarefas que podem ser concluídas rapidamente. Além disso, o sistema deve permitir a atualização da urgência de tarefas existentes para refletir mudanças nas prioridades do projeto.
+ 
+Implemente um sistema que utilize duas heaps:
+- Uma heap máxima para gerenciar tarefas baseadas em sua urgência;
+- Uma heap  mínima para gerenciar tarefas baseadas no tempo estimado de conclusão.
+ 
+Requisitos:
+1. Inserção de Tarefas: Adicionar uma nova tarefa com urgência e tempo estimado nas duas heaps. Cada tarefa tem um identificador único.
+   
+2. Atualização de Urgência: Permitir a atualização da urgência de uma tarefa. Isso deve reorganizar a tarefa dentro da heap de máxima sem afetar sua posição na heap de mínima.
+   
+3. Remoção de Tarefas por Urgência: Quando uma tarefa é removida da heap de máxima devido à sua alta urgência, ela também deve ser removida da heap de mínima.
+   
+4. Remoção de Tarefas por Tempo: Se uma tarefa for escolhida para ser realizada porque seu tempo de conclusão é curto (removida da heap de mínima), então ela também deve ser removida da heap de máxima.
+   
+5. Consulta de Tarefa Mais Urgente: Permitir a consulta da tarefa com a maior urgência.
+   
+6. Consulta de Tarefa com Menor Tempo de Conclusão: Permitir a consulta da tarefa que pode ser concluída mais rapidamente.
+ 
+7. Criação com várias tarefas: Permitir que as heaps sejam criadas  com vários valores. 
+ 
+ 
+Exemplo de Funcionamento:
+- Inserir tarefa ID 103 com urgência 6 e tempo 3 horas.
+- Atualizar a urgência da tarefa ID 103 para 9.
+- Consultar e remover a tarefa mais urgente (após atualização, ID 103). Após a consulta, ID 103 é removida de ambas as heaps.
+- Inserir tarefa ID 104 com urgência 4 e tempo 1,5 horas.
+- Consultar e remover a tarefa com menor tempo de conclusão (ID 104). Após a consulta, ID 104 é removida de ambas as heaps.

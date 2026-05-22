@@ -1,0 +1,26 @@
+Faça um sistema de catalogação de livros que utilize a Tabela Hash. O sistema deve permitir a inserção, remoção e busca de livros. Cada livro é identificado por um código ISBN e contém informações como título, autor e ano de publicação.
+ 
+
+Parte 1:Endereçamento aberto
+ 
+Implemente uma tabela hash usando a técnica de endereçamento aberto para resolver colisões. Utilize o método de duplo hash para isso.
+A função hash deve utilizar o código ISBN dos livros para calcular o índice na tabela.
+A tabela deve permitir inserção, busca e remoção de livros.
+Implemente funções para imprimir todos os livros em uma determinada posição da tabela. 
+ 
+ 
+Parte 2: Encadeamento Separado
+ 
+Implemente uma segunda versão da tabela hash usando técnica de Encadeamento Separado para resolver colisões. 
+A função hash deve utilizar o nome dos livros para calcular o índice na tabela.
+A tabela deve permitir inserção, busca e remoção de livros.
+Implemente funções para imprimir todos os livros em uma determinada posição da tabela, considerando possíveis colisões.
+ 
+ 
+O ISBN e nome dos livros podem ser repetidos (para teste da estrutura);
+
+
+Os nomes dos livros podem ser compostos por somente uma palavra;
+ 
+ 
+Quando inserir ou remover um livro de uma estrutura, deve ser replicado.
